@@ -206,6 +206,8 @@ def add_op (user):
 				send_message(CHAN, "That user is already an op!")
 		except sql.Error as e:
 			send_message(CHAN, "Unable to add user: {0}".format(e.args[0]))
+		except:
+			send_message(CHAN, "BURN IN HELL")
 
 	init_ops()
 
@@ -228,6 +230,8 @@ def delete_op (user):
 				send_message(CHAN, "That user does not exist!")
 		except sql.Error as e:
 			send_message(CHAN, "Unable to remove user: {0}".format(e.args[0]))
+		except:
+			send_message(CHAN, "GEEEEEEEEEEEET DUNKED ON")
 
 	init_ops()
 
